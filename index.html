@@ -11,8 +11,8 @@
     <h1>Volunteer Form</h1>
     <form method= "post" autocomplete="on" action="url: http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
       <fieldset>
+		<legend><strong>My Info</strong></legend>
         <div>
-          <legend><strong>My Info</strong></legend>
           <label>First Name:<input type="text" size="100" name="first_name_field" placeholder="first name"></label>
           <label>Last Name:<input type="text" size="100" name="last_name_field" placeholder="last name"></label>
           <label>Phone Number:<input type="text" size="100" name="phone_field" placeholder="phone number"></label>
@@ -26,19 +26,19 @@
          <div>
            <div> Age: </div>
            <select name="age_field">
-             <option><value="minor">Under 18</option>
-             <option><value="18-24">18-24</option>
-             <option><value="25-34" selected>25-34</option>
-             <option><value="35-44">35-44</option>
-             <option><value="45-54">45-54</option>
-             <option><value="55-64">55-64</option>
-             <option><value="senior">65 and over</option>
+             <option value="minor">Under 18</option>
+             <option value="18-24">18-24</option>
+             <option value="25-34" selected>25-34</option>
+             <option value="35-44">35-44</option>
+             <option value="45-54">45-54</option>
+             <option value="55-64">55-64</option>
+             <option value="senior">65 and over</option>
            </select>
            </div>
         </fieldset> 
         <fieldset>
-         <h2>My Availability</h2>
-          <legend>Days Available:</legend>
+         <legend>My Availability</legend>
+          <h3>Days Available:</h3>
          <div>
            <label>Sunday<input type="checkbox" name="available_field[]" value="Sundays"></label>
            <label>Monday<input type="checkbox" name="available_field[]" value="Mondays" checked></label>
